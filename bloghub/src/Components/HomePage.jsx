@@ -1,3 +1,4 @@
+import CreatePost from "./CreatePost";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
 import PostsCard from "./postsCard";
@@ -7,13 +8,14 @@ const posts = [{   title: "sunt aut facere repellat provident occaecati", body: 
 }]
 
 function HomePage() {
-  return <div className=" grid grid-rows-[auto,1fr,auto] bg-gray  max-h-full">
+  return <div className=" grid grid-rows-[auto,1fr,auto]  min-h-screen">
             <NavBar/>
-          <div className=" flex items-center justify-center">
+          {/* <div className=" flex items-center justify-center">
           <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-2"> {posts.map((post, index) =>{
                 return <PostsCard post={post} key={index} />
             })}</div>
-          </div>
+          </div> */}
+          <CreatePost/>
             <Footer/>
   </div>;
 }
