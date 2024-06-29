@@ -7,3 +7,8 @@
   padding: 0;
 }
 
+body {
+  background-color: #E7E8EB;
+  color: white; /* Optional: ensures text is visible on a black background */
+}
+
