@@ -8,8 +8,8 @@ function NavBar({isCreatePage = false}) {
             <div className=' p-4 flex hover:cursor-pointer  font-bold text-5xl'>
                 <div className=' m-2'> <img src={penIcon} width={"20"} height={"20"}/></div><h1 >Blog Hub</h1>
             </div>
-            {!isCreatePage?<div className='  text-white hover:cursor-pointer hover:shadow-lg hover:border hover:border-white p-4' >
-                <p >
+            {!isCreatePage?<div className='  text-white hover:cursor-pointer   p-4' >
+                <p className=' hover:border-b-2 hover:border-b-white '>
                 Create Post
                 </p>
                 </div>:""}
