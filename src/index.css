@@ -8,7 +8,16 @@
 }
 
 body {
-  background-color: #E7E8EB;
+  background-color: #e7e8eb;
+  height: 100%;
   color: white; /* Optional: ensures text is visible on a black background */
 }
 
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.postBody p{
+  margin-top: 10px;
+}
