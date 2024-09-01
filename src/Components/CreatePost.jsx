@@ -9,6 +9,7 @@ function CreatePost({ handleAddPost}) {
   const [authorName, setAuthorName] = useState("");
   const [body, setBody] = useState("");
   const [postCreated, setPostCreated] = useState(false);
+  
   function handleCreatePost() {
     if (!title || !authorName || !body) return;
     setPostCreated(true);
@@ -23,16 +24,19 @@ function CreatePost({ handleAddPost}) {
     setPostCreated(true);
     
   }
+
   function resetInputs(){
     setTitle("");
     setAuthorName("");
     setBody("");
   }
 
+  // Handling the case that another post is to be created.
   function handleCreateAnotherPost(){
     resetInputs();
     setPostCreated(false);
   }
+  // Navigate to the home page.
   function handleViewPosts(){
     navigate('/')
   }
@@ -58,12 +62,7 @@ function CreatePost({ handleAddPost}) {
             />
             <p className=" my-4"> Body </p>
             <TextEditor value={body} setValue={setBody}  />
-            {/* <input
-              type="text"
-              value={body}
-              onChange={(e) => setBody(e.target.value)}
-              className=" border my-2 border-black rounded-xl p-1 text-center h-60 font-normal  w-full"
-            /> */}
+           
             <div>
               <Button handleClick={handleCreatePost}
               buttonTitle={"Create"}/>
