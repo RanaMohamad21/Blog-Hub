@@ -8,7 +8,7 @@ function HomePage({ blogList }) {
     <div className=" grid grid-rows-[auto,1fr,auto]  min-h-screen">
       <NavBar />
       <div className=" flex items-center justify-center">
-        <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-2">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-2 px-2">
           {" "}
           {blogList.map((post, index) => {
             return <PostsCard post={post} key={index} />;

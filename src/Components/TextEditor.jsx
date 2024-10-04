@@ -23,7 +23,7 @@ function TextEditor({ value, setValue }) {
   
 
   return (
-    <div className={`relative h-44    ml-auto mr-auto  `}>
+    <div className={` block h-44  mb-6   ml-auto mr-auto  `}>
       <ReactQuill
         theme="snow"
         placeholder={"Type your post body here..."}
