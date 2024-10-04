@@ -27,7 +27,7 @@ function PostsCard({ post }) {
 
   return (
     <Link to={`/viewpost/${id}`} state={{ post }}>
-      <div className="sm:w-[80%] mx-auto md:w-90  flex-col justify-center bg-white text-black m-4 py-4 px-6 rounded-lg pb-10">
+      <div className="sm:w-[80%] mx-auto md:w-90  flex-col justify-center bg-white text-black m-4 py-4 px-6 rounded-lg pb-10 md:h-[280px]">
         {/* Post title */}
         <p
           className=" text-center text-[21px] font-bold capitalize mb-2"
@@ -40,7 +40,7 @@ function PostsCard({ post }) {
 
         {/* Post body */}
         <p className=" text-[16px]">
-          {trancateText(body, 30)}{" "}
+          {trancateText(body, 25)}{" "}
           {words.length > 10 && (
             <span
               title={"Click to view full post"}

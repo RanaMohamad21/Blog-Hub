@@ -44,7 +44,7 @@ function CreatePost({ handleAddPost}) {
   return (
     <div className="  w-full flex items-center justify-center  ">
       {!postCreated && (
-        <div className=" bg-white w-1/2 p-3 border border-black text-black rounded-xl  flex-col  h-[600px] my-6">
+        <div className=" bg-white w-1/2 lg:w-1/3 p-3 border border-black text-black rounded-xl  flex-col  h-[600px] my-6">
           <div className=" text-center text-xl font-bold  flex-col px-6">
             <p>Tittle</p>
             <input
@@ -60,12 +60,12 @@ function CreatePost({ handleAddPost}) {
               onChange={(e) => setAuthorName(e.target.value)}
               className=" border my-2 border-black rounded-xl p-1 text-center w-full"
             />
-            <p className=" my-4"> Body </p>
+            <p className=" my-4 "> Body </p>
             <TextEditor value={body} setValue={setBody}  />
            
             <div>
               <Button handleClick={handleCreatePost}
-              buttonTitle={"Create"}/>
+              buttonTitle={"Create"} style=" mt-20"/>
             </div>
           </div>
         </div>

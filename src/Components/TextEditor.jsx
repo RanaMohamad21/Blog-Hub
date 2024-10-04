@@ -20,27 +20,10 @@ const modules = {
 function TextEditor({ value, setValue }) {
   // const [isFocused, setIsFocused] = useState(false);
   const editorRef = useRef(null);
-  // const handleFocus = () => {
-  //   setIsFocused(true);
-  // };
-
-  // const handleBlur = () => {
-  //   setIsFocused(false);
-  // };
-
-  // const handleClickPlaceholder = () => {
-  //   editorRef.current.focus();
-  // };
-
-  // const handleTextChange = (value) => {
-  //   console.log("Description:", value);
-  //   setDesc(value);
-  //   setValue("description", value);
-  //   console.log(des);
-  // };
+  
 
   return (
-    <div className={`relative  h-64 lg:w-1/2 pl-4 mr-2  `}>
+    <div className={`relative h-44    ml-auto mr-auto  `}>
       <ReactQuill
         theme="snow"
         placeholder={"Type your post body here..."}
